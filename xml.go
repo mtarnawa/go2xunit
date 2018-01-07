@@ -1,4 +1,4 @@
-package lib
+package main
 
 // XML output
 import (

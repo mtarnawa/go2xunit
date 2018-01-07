@@ -1,4 +1,6 @@
-package lib
+package main
+
+/*
 
 // Status is test status
 type Status int
@@ -89,3 +91,4 @@ func (s *SuiteStack) Pop() *Suite {
 	s.count--
 	return s.nodes[s.count]
 }
+*/
