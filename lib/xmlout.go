@@ -14,7 +14,7 @@ import (
 const (
 	// XUnitTemplate is XML template for xunit style reporting
 	XUnitTemplate string = `
-{{range $suite := .Suites}}  <testsuite name="{{.Name | escape}}" tests="{{.Len}}" errors="0" failures="{{.NumFailed}}" skip="{{.NumSkipped}}">
+{{range $suite := .Suites}}  <testsuite name="{{.Name | escape}}" tests="{{.Len}}" errors="0" failures="{{.NumFailed}}" skipped="{{.NumSkipped}}">
 {{range  $test := $suite.Tests}}    <testcase classname="{{$suite.Name | escape}}" name="{{$test.Name | escape}}" time="{{$test.Time}}">
 {{if eq $test.Status $.Skipped }}      <skipped/> {{end}}
 {{if eq $test.Status $.Failed }}      <failure type="go.error" message="error">
