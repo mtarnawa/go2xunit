@@ -24,7 +24,7 @@ var (
 	// FAIL	_/home/miki/Projects/goroot/src/xunit	0.004s
 	// ok  	_/home/miki/Projects/goroot/src/anotherTest	0.000s
 	gtSuiteRE = regexp.MustCompile(
-		"^(ok|FAIL)[ \t]+([^ \t]+)[ \t]")
+		"^(ok|FAIL)[ \t]+([^ \t]+)[ \t]+(-?\\d+.\\d+)")
 
 	// ?       alipay  [no test files]
 	gtNoFilesRE = regexp.MustCompile("^\\?.*\\[no test files\\]$")
